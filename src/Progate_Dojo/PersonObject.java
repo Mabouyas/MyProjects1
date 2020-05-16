@@ -2,7 +2,7 @@ package Progate_Dojo;
 
 import java.util.Scanner;
 
-public class Main
+public class PersonObject
 {
 	
 	public static void main(String[] args) {
