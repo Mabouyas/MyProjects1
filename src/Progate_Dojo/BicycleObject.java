@@ -13,7 +13,7 @@ public class BicycleObject {
 		System.out.println("-----------------");
 		System.out.print("Enter distance to move:");
 		
-		int vitesse = scanner.nextInt();
-		bicycle.run(vitesse);
+		int distanceBicycle = scanner.nextInt();
+		bicycle.run(distanceBicycle);
 	}
 }

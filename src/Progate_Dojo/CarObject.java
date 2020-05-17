@@ -9,14 +9,19 @@ public class CarObject {
 		System.out.println("-----------------");
 		System.out.print("Enter distance to move:");
 		
-		int vitesse = scanner.nextInt();
-		bicycle.run(vitesse);
+		int distanceBicycle = scanner.nextInt();
+		bicycle.run(distanceBicycle);
 		
 		System.out.println("=================");
 		
 		Car car = new Car("Ferrari", "Red");
 		System.out.println("[Car info]");
 		car.printData();
+		
+		System.out.println("-----------------");
+		System.out.print("Enter distance to move:");
+		int distanceCar = scanner.nextInt();
+		car.run(distanceCar);
 		
 	}
 }
