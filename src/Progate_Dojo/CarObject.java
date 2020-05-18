@@ -23,5 +23,10 @@ public class CarObject {
 		int distanceCar = scanner.nextInt();
 		car.run(distanceCar);
 		
+		System.out.println("------------------");
+		System.out.println("Enter amount to refuel");
+		int amountRefuel = scanner.nextInt();
+		car.charge(amountRefuel);
+		
 	}
 }

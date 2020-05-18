@@ -1,5 +1,7 @@
 package Progate_Dojo;
 
+import javax.swing.*;
+
 public class Car {
 	private String name;
 	private String color;
@@ -28,6 +30,20 @@ public class Car {
 			System.out.println("Not enough fuel");
 		}
 		System.out.println("Distance: " + this.distance + "km");
+		System.out.println("Fuel: " + this.fuel + "L");
+	}
+	
+	public void charge(int amount) {
+		System.out.println("Adding amount " + amount +"L");
+		if (amount <= 0) {
+			System.out.println("No fuel added.");
+		} else if (amount + this.fuel >= 100) {
+			System.out.println("Tank now full.");
+			this.fuel = 100;
+		}
+		else {
+			this.fuel += amount;
+		}
 		System.out.println("Fuel: " + this.fuel + "L");
 	}
 }
